@@ -96,3 +96,9 @@
 
 
 }
+
+@media (max-width: 36rem) {
+  .label_custom {
+    font-size: 13px;
+  }
+}
