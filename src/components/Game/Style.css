@@ -1,0 +1,98 @@
+/* ------- Form -------- */
+
+/* ------- Logo -------- */
+.flex_logo {}
+
+.logo {
+  width: 400px;
+}
+/* --------------------- */
+
+/* ------- Put the content in the middle -------- */
+
+.flex_custom {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+/* ----------------------------------------------- */
+
+.game_form {
+  width: 100%;
+  position: relative;
+}
+
+.input_game {
+  width: 50%;
+  font-size: 50px;
+  border: 5px solid #121212;
+  border-radius: 4px;
+}
+
+.input_game:focus {
+  border: 5px solid #dc0c00;
+  outline: none;
+  border-radius: 3px;
+}
+
+.label_custom {
+  font-size: 20px;
+}
+
+.label_error {
+  color: #dc0c00;
+}
+
+.btn_start_game {
+  background-color: #dc0c00;
+  color: #ffffff;
+  padding: 20px 50px;
+  border: none;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.btn_start_game:hover {
+  text-decoration: none;
+  color: #121212;
+  text-decoration: none;
+  background-color: #ff4a4a;
+}
+
+.btn_start_game:focus {
+  outline: none;
+  box-shadow: none;
+}
+.btn_disable {
+  background-color: #b3b3b3;
+  pointer-events: none;
+
+}
+
+/* --------------------- */
+
+@media (max-width: 48rem) {
+
+  /* ------- Form -------- */
+
+  /* ------- Logo -------- */
+
+  .logo {
+    width: 200px;
+  }
+
+  /* --------------------- */
+
+  .input_game {
+    width: 60%;
+    font-size: 30px;
+  }
+  /* --------------------- */
+
+
+}
