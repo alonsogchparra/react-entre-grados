@@ -159,7 +159,7 @@ class Hangman extends Component {
       </div>
     );
 
-    if (answer.length === 0) return <Redirect to="/" />;
+    if (answer.length === 0) return <Redirect to={process.env.PUBLIC_URL} />;
 
     return <div className="game_bg">{checkGame}</div>;
   }
