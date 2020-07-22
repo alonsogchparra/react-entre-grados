@@ -74,6 +74,53 @@
 
 }
 
+/* ---------- Loading ----------- */
+
+.bottle {
+  animation: loading 1.4s infinite linear;
+  width: 100px;
+}
+
+.title h4 {
+  margin-top: 20px;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* -------------------------------- */
+
+/* --------------- Hangman ----------------- */
+
+.game_word {
+  font-size: 5rem;
+}
+
+.liver {
+  width: 320px;
+}
+
+/* ----------------------------------------- */
+
+
 /* --------------------- */
 
 @media (max-width: 48rem) {
@@ -93,6 +140,17 @@
     font-size: 30px;
   }
   /* --------------------- */
+
+/* --------------- Hangman ----------------- */
+
+  .game_word {
+    font-size: 3rem;
+  }
+  .liver {
+    width: 150px;
+  }
+
+/* ----------------------------------------- */
 
 
 }
