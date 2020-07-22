@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-entre-grados/precache-manifest.25dfb6eb592eb06bde725bd2a9532c1c.js"
+  "/react-entre-grados/precache-manifest.d60e0bd65e57eebeee7de6ed6a750ca1.js"
 );
 
 self.addEventListener('message', (event) => {
