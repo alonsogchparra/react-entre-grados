@@ -13,4 +13,6 @@ Also the project has a regex that won't let start the game until you write the w
 
 If you loose on the game, you can start a new party adding another word or phrase to keep playing.
 
+## You can check the demo right **[HERE](https://aliens9889.github.io/react-entre-grados/)**
+
 
