@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react-entre-grados/static/css/main.1710b11a.chunk.css",
+    "main.js": "/react-entre-grados/static/js/main.86f7d8da.chunk.js",
+    "main.js.map": "/react-entre-grados/static/js/main.86f7d8da.chunk.js.map",
+    "runtime-main.js": "/react-entre-grados/static/js/runtime-main.7baba0b9.js",
+    "runtime-main.js.map": "/react-entre-grados/static/js/runtime-main.7baba0b9.js.map",
+    "static/css/2.cff28e81.chunk.css": "/react-entre-grados/static/css/2.cff28e81.chunk.css",
+    "static/js/2.0aae7d11.chunk.js": "/react-entre-grados/static/js/2.0aae7d11.chunk.js",
+    "static/js/2.0aae7d11.chunk.js.map": "/react-entre-grados/static/js/2.0aae7d11.chunk.js.map",
+    "index.html": "/react-entre-grados/index.html",
+    "precache-manifest.5280ec58b8a74ed845f10118bd56993a.js": "/react-entre-grados/precache-manifest.5280ec58b8a74ed845f10118bd56993a.js",
+    "service-worker.js": "/react-entre-grados/service-worker.js",
+    "static/css/2.cff28e81.chunk.css.map": "/react-entre-grados/static/css/2.cff28e81.chunk.css.map",
+    "static/css/main.1710b11a.chunk.css.map": "/react-entre-grados/static/css/main.1710b11a.chunk.css.map",
+    "static/js/2.0aae7d11.chunk.js.LICENSE.txt": "/react-entre-grados/static/js/2.0aae7d11.chunk.js.LICENSE.txt",
+    "static/media/beber.mp3": "/react-entre-grados/static/media/beber.6ebfa8b9.mp3",
+    "static/media/entregrados_logo.png": "/react-entre-grados/static/media/entregrados_logo.bc99a450.png",
+    "static/media/higado_0.png": "/react-entre-grados/static/media/higado_0.17e035b4.png",
+    "static/media/higado_1.png": "/react-entre-grados/static/media/higado_1.8f208556.png",
+    "static/media/higado_2.png": "/react-entre-grados/static/media/higado_2.f3422a48.png",
+    "static/media/higado_3.png": "/react-entre-grados/static/media/higado_3.95e2b8ac.png",
+    "static/media/higado_4.png": "/react-entre-grados/static/media/higado_4.14337e83.png",
+    "static/media/higado_5.png": "/react-entre-grados/static/media/higado_5.ebb14a06.png",
+    "static/media/higado_6.png": "/react-entre-grados/static/media/higado_6.74541a3c.png",
+    "static/media/victoria.mp3": "/react-entre-grados/static/media/victoria.5acc4c35.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7baba0b9.js",
+    "static/css/2.cff28e81.chunk.css",
+    "static/js/2.0aae7d11.chunk.js",
+    "static/css/main.1710b11a.chunk.css",
+    "static/js/main.86f7d8da.chunk.js"
+  ]
+}
