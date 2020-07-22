@@ -6,7 +6,7 @@ import Hangman from './components/Game/Hangman';
 function App() {
   return (
     <div>
-      <BrowserRouter basename="/">
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={EnterPhrase} />
           <Route path="/game" component={Hangman} />
