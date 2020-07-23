@@ -136,10 +136,9 @@ class Hangman extends Component {
       <Loading />
     ) : (
       <div className="container">
-        <h1 className="text-center">El Higado Ahogado</h1>
-        <h4 className="text-center">
+        <h1 className="text-center">
           Cuanto shots llevas: {mistake} de {maxWrong}
-        </h4>
+        </h1>
         <div className="text-center">
           <img src={images[mistake]} alt="" className="liver" />
         </div>
@@ -149,11 +148,13 @@ class Hangman extends Component {
               ? "Adivina la palabra o frase:"
               : "La palabra o frase era:"}
           </h4>
-          <h1 className="game_word">
-            {gameOver || isWinner || youGuessed
-              ? answerCopy
-              : this.guessedWords()}
-          </h1>
+          <pre>
+            <h1 className="game_word">
+              {gameOver || isWinner || youGuessed
+                ? answerCopy
+                : this.guessedWords()}
+            </h1>
+          </pre>
           {winOrLose}
         </div>
       </div>
