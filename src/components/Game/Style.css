@@ -110,8 +110,15 @@
 
 /* --------------- Hangman ----------------- */
 
+pre {
+  white-space: pre-wrap;
+  margin: 0 auto;
+}
+
 .game_word {
-  font-size: 5rem;
+  font-size: 4rem;
+  font-family: 'Bebas Neue', 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
 }
 
 .liver {
