@@ -1,24 +1,25 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import * as actions from '../../store/actions';
-import logo from '../../media/images/entregrados_logo.png';
-import './Style.css';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import * as actions from "../../store/actions";
+import logo from "../../media/images/entregrados_logo.png";
+import "./Style.css";
 
 class EnterPhrase extends Component {
-
   state = {
-    isPhraseValid: false
-  }
+    isPhraseValid: false,
+  };
 
   componentDidMount() {
     const { answer } = this.props;
 
-    if (answer.length === 0
-      || answer === ''
-      || answer === undefined
-      || answer === null) {
+    if (
+      answer.length === 0 ||
+      answer === "" ||
+      answer === undefined ||
+      answer === null
+    ) {
       this.setState({
-        isPhraseValid: false
+        isPhraseValid: false,
       });
     }
   }
@@ -32,26 +33,33 @@ class EnterPhrase extends Component {
     } else {
       this.setState({ isPhraseValid: false });
     }
-  }
+  };
 
   onSubmitHandler = () => {
-    return (this.state.isPhraseValid && document.forms['game']['word'].value !== '')
-    ? this.props.history.push('/game') : false;
-  }
+    return this.state.isPhraseValid &&
+      document.forms["game"]["word"].value !== ""
+      ? this.props.history.push("/game")
+      : false;
+  };
 
-
-  render () {
-
+  render() {
     const { isPhraseValid } = this.state;
 
     return (
       <div>
-        <form className="game_form" name="game" onSubmit={() => this.onSubmitHandler()}>
+        <form
+          className="game_form"
+          name="game"
+          onSubmit={() => this.onSubmitHandler()}
+        >
           <div className="flex_custom">
             <div className="flex_logo">
               <img src={logo} alt="entregrados" className="logo" />
             </div>
-            <label className="label_custom">Escribe la palabra o frase para empezar el juego manao</label>
+            <h1>Higado Ahogado</h1>
+            <label className="label_custom">
+              Escribe la palabra o frase para empezar el juego manao
+            </label>
             <input
               type="text"
               className="input_game"
@@ -59,27 +67,31 @@ class EnterPhrase extends Component {
               name="word"
               onChange={(e) => this.checkWordsHandler(e.target.value)}
             />
-            <label className="label_custom label_error">{ isPhraseValid ? '' : 'Usa solo letras para la palabra o frase que vayas a crear'}</label>
+            <label className="label_custom label_error">
+              {isPhraseValid
+                ? ""
+                : "Usa solo letras para la palabra o frase que vayas a crear"}
+            </label>
             <button
               type="submit"
-              className={`btn_start_game ${isPhraseValid ? '' : 'btn_disable'}`}
+              className={`btn_start_game ${isPhraseValid ? "" : "btn_disable"}`}
             >
               Start Game
             </button>
           </div>
         </form>
       </div>
-    )
+    );
   }
 }
 
 const mapStateToProps = (state) => ({
   answer: state.game.answer,
-  answerCopy: state.game.answerCopy
+  answerCopy: state.game.answerCopy,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  onAddPhrase: (str) => dispatch(actions.addPhrase(str))
+  onAddPhrase: (str) => dispatch(actions.addPhrase(str)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(EnterPhrase)
+export default connect(mapStateToProps, mapDispatchToProps)(EnterPhrase);
