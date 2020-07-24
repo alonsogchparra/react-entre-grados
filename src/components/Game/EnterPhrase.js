@@ -35,7 +35,8 @@ class EnterPhrase extends Component {
     }
   };
 
-  onSubmitHandler = () => {
+  onSubmitHandler = (e) => {
+    e.preventDefault();
     return this.state.isPhraseValid &&
       document.forms["game"]["word"].value !== ""
       ? this.props.history.push("/game")
